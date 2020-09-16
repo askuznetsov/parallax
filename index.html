@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Moon Light</title>
+</head>
+
+<body>
+    <section>
+        <img src="img/bg.jpg" alt="bg" id="bg">
+        <img src="img/moon.png" alt="moon" id="moon">
+        <img src="img/mountain.png" alt="mountain" id="mountain">
+        <img src="img/road.png" alt="road" id="road">
+
+        <h2 id="text">Moon Light</h2>
+    </section>
+
+    <div class="text_content">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti modi veritatis cumque, eaque veniam alias
+        suscipit, neque sint corporis aliquid mollitia eum sed libero rerum, vitae consequatur beatae saepe ex.
+        Veritatis in consequatur nesciunt provident animi distinctio blanditiis, recusandae assumenda doloribus,
+        adipisci nostrum nihil obcaecati, molestias vero optio quibusdam voluptas. Error ea explicabo expedita fugiat
+        quibusdam sit repudiandae ut placeat.
+        Eius nulla cumque dolorem qui recusandae neque vero veritatis fugiat, hic eaque saepe perferendis, labore non?
+        Tempora explicabo, necessitatibus dolorum alias aut ratione nobis nihil quae architecto pariatur vero inventore.
+    </div>
+
+    <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function () {
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.2 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+        })
+    </script>
+</body>
+
+</html>
