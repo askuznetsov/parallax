@@ -1,6 +1,6 @@
 # PARALLAX. Moon Light
 
-Practice parralax feature.
+Practice parallax feature.
 
 # 
 
